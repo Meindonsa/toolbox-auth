@@ -1,20 +1,20 @@
 # AUTH ARTEFACT
 
-# DEV
-
-## Init
-
-`pre-commit install`
-
-NB : make sure your JAVA_HOME is correctly setted. It can be verified with the command `echo $JAVA_HOME`
-
 ## Build
 
-`mvn clean install -DskipTests -T1C`
+```sh
+  mvn clean install -DskipTests -T1C
+```
 
 ## Create release
-`mvn -U -B release:prepare release:perform -DskipTests`
+```sh
+  mvn -U -B release:prepare release:perform -DskipTests
+```
 
+## Publish
+```sh
+  mvn clean deploy
+```
 # Usage
 
 ## Installation
